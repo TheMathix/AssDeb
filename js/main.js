@@ -38,6 +38,7 @@ const createWindow = () => {
           { label: 'Open file', click: () => { mainWindow.webContents.send('Open file') } },
           { label: 'Close file', click: () => { mainWindow.webContents.send('Close file') } },
           { label: 'Save file', click: () => { mainWindow.webContents.send('Save file') } },
+          { label: 'Save file as', click: () => { mainWindow.webContents.send('Save file as') } },
           { label: 'Select Language'
           , submenu: [ 
             { label: 'ArmV4', click: () => { mainWindow.webContents.send('Select Language', 'ArmV4') }},
